@@ -75,7 +75,7 @@ section{padding:84px 5%}
 .vi-ico svg{width:19px;height:19px}
 .vi-t{font-size:14px;font-weight:600;color:var(--white);margin-bottom:7px}
 .vi-d{font-size:12.5px;font-weight:400;color:rgba(255,255,255,.5);line-height:1.7}
-.prod-sec{background:var(--off)}
+.prod-sec{background:var(--blue-deep)}.prod-sec .eyebrow{color:rgba(255,255,255,.7)}.prod-sec .eyebrow::before{background:rgba(255,255,255,.5)}.prod-sec .sec-title{color:var(--white)}.prod-sec .prod-hdr .btn-nav{background:var(--white);color:var(--blue-deep)}.prod-sec .prod-hdr .btn-nav:hover{background:var(--blue-light);color:var(--blue-deep)}
 .prod-hdr{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:44px}
 .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .pcard{background:var(--white);border-radius:16px;overflow:hidden;border:1px solid var(--gray-200);transition:transform .25s,box-shadow .25s;cursor:pointer;display:block;color:inherit}
@@ -110,7 +110,7 @@ section{padding:84px 5%}
 .modal-banner{width:100%;height:340px;object-fit:contain;background:#f0f5ff;border-radius:20px 20px 0 0;display:block}
 .modal-banner-fallback{width:100%;border-radius:20px 20px 0 0;overflow:hidden;line-height:0}
 .modal-body{padding:32px}
-.modal-logo{height:48px;margin-bottom:16px;object-fit:contain;object-position:left}
+.modal-logo{height:80px;margin-bottom:16px;object-fit:contain;object-position:left}
 .modal-tagline{font-size:15px;font-weight:400;color:var(--gray-600);line-height:1.7;margin-bottom:24px}
 .modal-badges{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px}
 .modal-badge{display:flex;align-items:center;gap:7px;background:var(--blue-light);border-radius:8px;padding:8px 14px}
@@ -411,7 +411,7 @@ footer{background:var(--gray-800);padding:56px 5% 26px}
   text-decoration: none;
 }
 .btn-hero-main:hover { background: var(--blue-mid); transform: translateY(-2px); }
-.btn-hero-ghost-main { color: var(--blue-deep); border-color: rgba(255,255,255,0.6) !important;
+.btn-hero-ghost-main {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -514,7 +514,7 @@ footer{background:var(--gray-800);padding:56px 5% 26px}
   text-decoration: none;
 }
 .btn-hero-main:hover { background: var(--blue-mid); transform: translateY(-2px); }
-.btn-hero-ghost-main { color: var(--blue-deep); border-color: rgba(255,255,255,0.6) !important;
+.btn-hero-ghost-main {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -563,4 +563,27 @@ footer{background:var(--gray-800);padding:56px 5% 26px}
   .hero-main-right { height: 300px; }
   .hero-main-left { padding: 40px 5%; }
   .hero-main-stats { width: 100%; }
+}
+
+/* Normalizar logos del modal */
+.modal-logo{
+ width: 280px !important;
+ height: 90px !important;
+ object-fit: contain !important;
+ object-position: left center !important;
+ display: block !important;
+ margin-bottom: 16px !important;
+}
+/* Ajustes visuales por logo */
+.modal-logo[alt="Xicanil"]{
+ width: 180px !important;
+ height: 90px !important;
+}
+.modal-logo[alt="Bronquisedan"]{
+ width: 180px !important;
+ height: 90px !important;
+}
+.modal-logo[alt="Oralsone"]{
+ width: 280px !important;
+ height: 90px !important;
 }
